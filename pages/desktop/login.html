@@ -1,0 +1,119 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//RU" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Главная</title>
+		<meta charset="utf-8"/>
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../main.css">
+        <style>
+            body {
+                margin: 0px;
+                background-color: #F5F5F5;
+            }
+
+            table {
+                width: 100%;
+                border-spacing: 0px;
+            }
+
+            .header {
+                height: 40px;
+                background-color: #19364D;
+                text-align: center;
+                vertical-align: bottom;
+                color: white;
+                padding: 40px 0px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 35px;
+            }
+
+            .window {
+                margin: -35px 0px 0px 0px;
+                padding: 35px;
+                background-color: beige;
+                height: 180px;
+                width: 350px;
+            }
+
+            .text_box {
+                height: 20px;
+                padding: 9px 11px;
+                border: solid;
+                border-width: 1px;
+                border-radius: 2px;
+                border-color: #C8E1F4;
+                font-size: 14px;
+                font-family: Roboto,sans-serif;
+                line-height: 20px;
+                background-color: #E9F0FE;
+                margin-bottom: 20px;
+            }
+
+            .button {
+                min-width: 154px;
+                height: 30px;
+                border-width: 1px;
+                border: solid;
+                border-color: #C8E1F4;
+                border-radius: 2px;
+                background-color: #3098d9;
+                color: white;
+                padding: 0px 15px;
+            }
+
+            .login_form {
+                width: 235px;
+                margin: 46px auto 0px;
+                padding: 0px;
+                width: 80%;
+                font-size: 14px;
+                font-family: sans-serif;
+                color: black;
+            }
+
+            .login_form_item {
+                margin-bottom: 8px; 
+            }
+
+            .form_title {
+                font-size: 25px;
+                font-family: sans-serif;
+            }
+        </style>
+	</head>
+	<body>
+        <table>
+            <tr>
+                <td class="header">
+                    <div>УМНЫЙ ДОМ</div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div class="window">
+                        <div class="form_title">
+                            Вход в панель управления
+                        </div>
+                        <form name="login.form" class="login_form" method="POST" action="../login.js">
+
+                            <div class="login_form_item">
+                                <input type="text" class="text_box" name="username" maxlength="25"
+                                       autocomplete="on" placeholder="Имя пользователя" />
+                            </div>
+                            <div class="login_form_item">
+                                <input type="password" class="text_box" name="password" maxlength="25"
+                                       autocomplete="on" placeholder="Пароль" />
+                            </div>
+
+                            <div class="login_form_item">
+                                <label for="submit" title="Войти на сервер">
+                                    <input type="button" class="button" name="submit" placeholder="asd" />
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+	</body>
+</html>

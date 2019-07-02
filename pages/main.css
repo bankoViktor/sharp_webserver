@@ -1,0 +1,16 @@
+
+.header {
+    background-color: #19364D;
+    height: 50px;
+}
+
+.menu_item {
+    margin: 20px 0px 0px 0px;
+    height: 40px;
+    font-size: 20px;
+    font-family: Candara;
+}
+
+.menu_item:hover {
+    background-color: gray;
+}

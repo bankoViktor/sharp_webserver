@@ -1,0 +1,13 @@
+﻿
+namespace WebServerTest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WebServer.Server server = new WebServer.Server(63000, "D:\\VisualStudio\\repos\\sharp_server\\pages");
+
+            server.Start();
+        }
+    }
+}
